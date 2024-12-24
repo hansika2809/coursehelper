@@ -1,0 +1,34 @@
+<!-- Login Modal -->
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+        <h3>Login</h3>
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <button class="update">Login</button>
+    </div>
+</div>
+
+<script>
+    const courseModal = document.getElementById('course-modal');
+    const loginModal = document.getElementById('login-modal');
+
+    function showCourseModal() {
+        courseModal.style.display = 'flex';
+    }
+
+    function showLoginModal() {
+        loginModal.style.display = 'flex';
+    }
+
+    window.onclick = function(event) {
+        if (event.target === courseModal) {
+            courseModal.style.display = 'none';
+        }
+        if (event.target === loginModal) {
+            loginModal.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
